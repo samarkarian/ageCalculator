@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgeCalculator</title>
+  <script src="index.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+</head>
+<body style="font-family: 'Edu QLD Hand', cursive;">
+    <div class="flex justify-center h-screen items-center flex-col">
+        <p class="text-3xl">Age Calculator</p>
+        <p class="mt-4">Enter your birth date :</p>
+    <div class="relative w-full max-w-xs mt-2">
+        <input
+            type="text"
+            id="birthDateInput"
+            class="border-2 rounded-md outline-none pl-2 pr-10 text-sm py-1 w-full"
+            placeholder="Date de naissance"
+        />
+        <button type="button" id="birthDateButton" class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor"> <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z"/>
+            </svg>
+        </button>
+    </div>
+        <button id="calculateButton" class="bg-zinc-700 text-white cursor-pointer rounded-md w-1/5 mt-2 py-2">Calculate</button>
+        <p class="mt-2 text-center"><span id="result"></span></p>
+    </div>
+</body>
+</html>
