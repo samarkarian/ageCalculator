@@ -10,10 +10,6 @@ A web application to calculate your exact age in years, months, and days.
 - Input validation (invalid dates are handled)
 - Clean and modern UI
 
-## Demo
-
-![Screenshot](screenshot.png) <!-- Add a real screenshot if you have one -->
-
 ## How it works
 
 1. Enter your birthdate using the datepicker.
